@@ -16,7 +16,9 @@ forms.addEventListener("submit", async (e) => {
     text.value = "";
     const userMessageContainer = document.createElement("div");
 
-    userMessageContainer.setAttribute("id", "user-message-"+ Date.now());
+    userMessageContainer.setAttribute("id", "user-message-"+ Date.now());//without this line of code(without id and date) also it works but it is good practice to add those 
+    //becoz Without adding a unique ID, each new message will be appended to the previous message container, which can make it difficult to style or manipulate individual messages.
+
 
     userMessageContainer.classList.add("user-messages");
 
