@@ -1,0 +1,113 @@
+
+::-webkit-scrollbar{
+    width: 0;/*it disapper the scrollbar which is shown ok at right side */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+}
+
+.main{
+    width: 100vw;
+    max-width: 540px;
+    height: 100vh;
+    box-shadow: inset 0 0 10px 4px rgba(47, 46, 46, 0.4);
+}
+h2{
+    text-align: center;
+    font-family: sans-serif;
+    background: #1c1c3b;
+    color: aliceblue;
+    padding: 8px;
+    text-shadow: 1px 1px 4px #111;
+}
+#msg_area{
+    height: 82%;
+    padding: 0 12px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+#bot{
+    width: 50px;
+    height: 50px;
+    background: url(chatbot.png);
+    background-size: 100%;
+    /*border-radius: 50%;*/
+    margin: 10px;   
+}
+#robot{
+    display: flex;
+    align-items: center;
+}
+h3{
+    font-family: monospace;
+    font-size: 20px;
+}
+#input{
+    height: 7%;
+    min-height: 42px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    margin: 8px 16px;
+   background: linear-gradient( #191c47 50%,#191c47); /*it makes send button different in shape*/
+   border-radius: 32px;
+}
+
+#text{
+    outline: none;
+    font-size: 20px;
+    background: #e3e3e9;
+    color: #333;
+    border-radius: 32px 0 32px 32px;
+    padding: 0 16px;
+    border: solid 1px;
+    border-right: none;
+}
+
+#send{
+    outline: none;
+    font-size: 20px;
+    color: #eee;
+    background: #1c1f46;
+    border: none;
+    border-radius: 32px;
+    transition: 1s ease-in-out;
+}
+#send:hover{
+    font-size: 16px;
+    
+}
+.user-messages{
+    font-size: 20px;
+    font-family: sans-serif;
+  
+    background-color: #1c1c3b;
+    color: aliceblue;
+    margin: 5px 0px 1px auto;
+    padding: 14px;
+    height: 50px;
+    width: 250px;
+    border-radius: 10px;
+}
+.bot-messages{
+    font-size: 20px;
+    font-family: sans-serif;
+    background-color: #1c1c3b;
+    color: aliceblue;
+    margin: 5px auto 1px 0px;
+    padding: 14px;
+    height: 50px;
+    min-width: 250px;
+    border-radius: 10px;
+}
+#chat-messages{
+ display: grid;
+}
